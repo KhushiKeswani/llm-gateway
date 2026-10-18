@@ -1,0 +1,338 @@
+timestamp,provider,prompt_id,run,concurrency,http_status,success,ttft_ms,total_latency_ms,output_chars,output_text,error,quality_score,estimated_cost
+2026-10-18T09:02:21.765264+00:00,auto,1,1,1,200,True,12393.49,15112.25,194,"An API Gateway is a service that acts as a single entry point for managing and controlling access to a collection of web APIs, allowing for standardization and security across multiple services.",,,
+2026-10-18T09:02:25.570833+00:00,auto,1,2,1,200,True,1814.87,3803.42,127,"An API gateway acts as a single entry point for clients, directing traffic to the appropriate backend services or applications.",,,
+2026-10-18T09:02:28.980228+00:00,auto,1,3,1,200,True,1724.79,3408.41,133,"An API gateway acts as a centralized interface for external clients to access APIs, managing traffic and enforcing security policies.",,,
+2026-10-18T09:02:57.720216+00:00,auto,2,1,1,200,True,2066.88,28739.92,1479,"HTTP (Hypertext Transfer Protocol) and HTTPS (Hypertext Transfer Protocol Secure) are both protocols used for transferring data over the internet, but they differ in how they ensure the security of the data they carry.
+
+HTTP is a simple protocol that uses TCP (Transmission Control Protocol) to establish a connection between the client and the server. Once the connection is established, the client requests a resource (e.g., a webpage) from the server, and the server provides the resource. HTTP is insecure and does not provide any form of data protection. However, it is fast and easy to use, making it suitable for simple applications.
+
+HTTPS, on the other hand, is a secure version of HTTP. It uses SSL/TLS (Secure Sockets Layer/Transport Layer Security) to encrypt the data being transferred between the client and the server. This means that any data sent in the HTTP request or response is encrypted and cannot be intercepted or read by unauthorized parties. HTTPS ensures that the data is not tampered with, and it provides a high level of security, making it suitable for applications that require confidentiality and integrity of the data, such as online banking, e-commerce, and other applications that handle sensitive information.
+
+In summary, the main difference between HTTP and HTTPS is the security it provides. HTTPS ensures the security of the data being transferred between the client and the server, while HTTP does not provide any form of data protection.",,,
+2026-10-18T09:03:21.151089+00:00,auto,2,2,1,200,True,2684.75,23323.64,1121,"HTTP (Hypertext Transfer Protocol) and HTTPS (Hypertext Transfer Protocol Secure) are both protocols used for transmitting data on the internet, but they differ in how they secure the data being transmitted.
+
+HTTP is a protocol that allows users to send and receive information between a web server and a web browser. It does not provide any encryption or security for the data being transmitted, making it vulnerable to interception and tampering by unauthorized parties.
+
+HTTPS, on the other hand, is a secure version of HTTP that uses encryption to protect the data being transmitted between the web server and the web browser. This means that the data is encrypted before it is sent, and can only be decrypted by the intended recipient. This provides a higher level of security for the data being transmitted, making it more difficult for unauthorized parties to intercept or modify the information.
+
+In summary, the main difference between HTTP and HTTPS is the use of encryption to secure the data being transmitted. HTTP is not secure, while HTTPS is designed to protect the data being transmitted on the internet.",,,
+2026-10-18T09:03:41.195171+00:00,auto,2,3,1,200,True,1763.67,20044.01,1081,"HTTP and HTTPS are two types of protocols that are used to transfer data between a web server and a web browser. 
+
+HTTP (Hypertext Transfer Protocol) is a standard protocol that is used to transfer data between a web server and a web browser. It is the protocol that is used by the vast majority of websites and web applications. 
+
+HTTPS (Hypertext Transfer Protocol Secure) is an updated version of HTTP that uses an encryption protocol called SSL (Secure Sockets Layer) to secure the connection between a web server and a web browser. HTTPS is commonly used by websites that handle sensitive information, such as online banking and e-commerce sites, to ensure that the data that is transmitted is secure and protected from unauthorized access. 
+
+The main difference between HTTP and HTTPS is that HTTPS uses SSL encryption to secure the connection between the web server and the web browser, whereas HTTP does not. This means that HTTPS ensures that the data being transferred between the server and the browser is encrypted and protected from being intercepted by a third party.",,,
+2026-10-18T09:04:02.993871+00:00,auto,3,1,1,200,True,2608.52,21799.19,775,"Caching is a technique that helps speed up data retrieval by storing frequently accessed data in a temporary memory location, reducing the need to access slower storage devices like hard drives or SSDs. The data that is stored in cache is called a cache hit, and the data is usually read from a faster memory source like RAM.
+
+One simple example of caching is a web browser's cache. When you visit a website, the browser typically stores a copy of the webpage in a temporary memory location, like the cache. This allows you to quickly access the information whenever you revisit the site in the future. If you return to the same site after leaving it, the browser will retrieve the cached version of the webpage instead of making a request to the internet, which can be slow.",,,
+2026-10-18T09:04:22.775776+00:00,auto,3,2,1,200,True,4840.84,19341.72,713,"Caching is a technique used to speed up the performance of computer systems by storing frequently accessed data in a temporary location that is easily accessible. This is typically done by keeping copies of recently used data in memory or on a faster storage device.
+
+For example, when you open a web browser, the system likely caches the home page and any frequently visited websites. This means that every time you visit that site again, the browser doesn't have to retrieve the page from the internet; instead, it can just fetch the cached version, which is usually faster. This is particularly useful for websites with large amounts of data, as it can significantly reduce the time it takes to load a webpage.",,,
+2026-10-18T09:04:44.749570+00:00,auto,3,3,1,200,True,1985.89,21973.63,966,"Caching is a technique used to speed up computer performance by storing frequently accessed data in a local memory or cache. This local storage reduces the need for the computer to frequently access slow storage devices like hard drives or SSDs, which can greatly slow down system performance.
+
+For example, a web browser cache is a type of caching used to store frequently accessed web pages and their associated data (like images, videos, and scripts) on a local memory cache. When the user loads a webpage, the browser first checks the local cache to see if it already has the page stored there. If it does, the page is loaded quickly from the local cache instead of from a slow storage device.
+
+Another example is the use of a disk cache in a computer's operating system. The OS keeps a small portion of the hard drive in memory, which can be quickly accessed for frequently used files, making them much faster to load than if they were stored on the hard drive.",,,
+2026-10-18T09:05:03.527928+00:00,auto,4,1,1,200,False,4419.59,18778.59,824,"A database index is a data structure that allows for efficient access to data by providing faster retrieval of specific records. It works by creating a list of pointers (indexes) to the location of records in the database.
+
+**Why is it useful?**
+
+1. **Speed of Retrieval**: Indexes allow the database to quickly locate specific records by using a precomputed hash, tree, or lookup table, instead of having to search the entire database every time a record is needed. This speeds up queries that involve selecting or joining records.
+
+2. **Storage Efficiency**: In databases, data is often stored in multiple tables, and when a query involves joining tables, there might be unnecessary data retrieval and processing. An index can help by reducing the number of records that need to be read.
+
+3. **Data Security**: Indexes can",Ollama stream interrupted,,
+2026-10-18T09:05:18.963183+00:00,auto,4,2,1,200,True,11331.18,15436.41,2824,"Think of a database index like the **index at the back of a textbook**. 
+
+If you want to find every page in a 1,000-page biology textbook that mentions ""Photosynthesis,"" you have two choices:
+1. **Without an index:** Flip through all 1,000 pages one by one. (In database terms, this is called a **Full Table Scan**).
+2. **With an index:** Turn to the back of the book, look up ""Photosynthesis"" alphabetically, see that it’s on page 421, and turn directly to page 421. 
+
+A **database index** is a specialized data structure (usually a B-Tree or Hash Table) that stores a small portion of a database table's data in a specific order, along with a ""pointer"" to the exact location of the full row.
+
+---
+
+### Why is a Database Index useful?
+
+#### 1. Dramatic Speed Improvement (Faster Queries)
+Without an index, searching for a specific record in a database with millions of rows requires checking *every single row* until a match is found. With an index, the database can use fast search algorithms to locate the exact data in a fraction of a second.
+* **Without index:** Takes seconds or minutes.
+* **With index:** Takes milliseconds.
+
+#### 2. Efficient Sorting (`ORDER BY`)
+If you ask a database to return a list of customers sorted by `Last_Name`, it normally has to fetch all the data and sort it in memory. If the `Last_Name` column is indexed, the data is already stored in sorted order within the index, saving massive amounts of computing power.
+
+#### 3. Quick Filtering and Joining
+Indexes heavily speed up queries that use filters (e.g., `WHERE age > 30`) or merge data from multiple tables using `JOIN` statements.
+
+#### 4. Enforces Uniqueness
+Indexes are used to make sure duplicate data isn't entered into fields that require unique values, such as Social Security numbers, User IDs, or Email addresses. 
+
+---
+
+### An Example in SQL
+
+Imagine a table called `Users` with 1,000,000 rows. You run this query:
+
+```sql
+SELECT * FROM Users WHERE Email = 'alex@example.com';
+```
+
+* **No Index on `Email`:** The database scans 1,000,000 rows.
+* **Index on `Email`:** The database uses the index, finds `'alex@example.com'` instantly, and grabs that specific row.
+
+---
+
+### The Catch: What’s the downside?
+
+If indexes are so great, why not put an index on *every* column?
+
+1. **Slower Write Operations (Inserts, Updates, Deletes):** Every time you add, change, or delete a row in a table, the database must also update the index. Too many indexes will make write operations slow.
+2. **Disk Space:** Indexes take up extra storage space. For massive databases, indexes can sometimes take up as much space as the data itself.
+
+### Summary
+A database index is a tool used to **trade a little bit of storage space and write speed for massive gains in read/search speed**. It is essential for building fast, scalable applications.",,,
+2026-10-18T09:05:36.059311+00:00,auto,4,3,1,200,True,12623.32,17107.54,3355,"To understand a database index, the best place to start is with a real-world analogy: **the index at the back of a textbook.**
+
+If you want to find every page in a 1,000-page biology textbook that mentions ""Photosynthesis,"" you have two options:
+1. **Without an index:** Flip through all 1,000 pages one by one (this is called a **Full Table Scan**). It takes a long time.
+2. **With an index:** Turn to the back of the book, look up ""Photosynthesis"" alphabetically, see that it’s on pages 45, 112, and 304, and jump directly to those pages. 
+
+A **database index** works the exact same way.
+
+---
+
+### What is a Database Index?
+
+Technically, a database index is a **data structure** (most commonly a *B-Tree* or a *Hash table*) that holds a copy of specific columns from a database table, organized in a way that makes searching extremely fast. 
+
+Instead of reading every row in a table to find a match, the database searches the lightweight index first, finds the exact physical location (memory address) of the matching data, and retrieves only those specific rows.
+
+---
+
+### Why is it Useful? (The Benefits)
+
+#### 1. Massive Performance Boost (Speed)
+The primary benefit of an index is query speed. Searching an un-indexed table with millions of rows can take several seconds—or even minutes. An indexed query can return results in a few **milliseconds**.
+
+#### 2. Faster Sorting (`ORDER BY`) and Grouping (`GROUP BY`)
+Because data in an index is already stored in a specific order (e.g., alphabetical or numerical), the database doesn't have to spend time sorting the results when you run queries using `ORDER BY` or `GROUP BY`.
+
+#### 3. Optimized Table Joins (`JOIN`)
+When linking two tables together (for example, matching `Orders` to `Customers`), indexes on the connecting keys (like `customer_id`) allow the database to quickly align records without scanning both tables repeatedly.
+
+#### 4. Enforcing Uniqueness
+Indexes can be set to ""Unique."" This prevents duplicate entries in a database, ensuring that things like User IDs, Social Security numbers, or Email addresses remain completely unique.
+
+---
+
+### An Example in SQL
+
+Imagine a table called `Users` with 5 million rows:
+
+```sql
+SELECT * FROM Users WHERE email = 'alex@example.com';
+```
+
+* **Without an index on `email`:** The database engine searches all 5,000,000 rows row-by-row.
+* **With an index on `email`:** The database uses a tree-structure to narrow down the search in about 20 steps, immediately finding `alex@example.com`.
+
+---
+
+### The Catch: Why not index *everything*?
+
+If indexes are so great, why don't we put an index on every single column? Because indexes come with trade-offs:
+
+1. **Slower Writes (`INSERT`, `UPDATE`, `DELETE`):** Every time you add, modify, or delete a row in the table, the database has to update the main table *and* rewrite all associated indexes. Too many indexes will drastically slow down data entry.
+2. **Storage Costs:** Indexes take up disk space and memory (RAM). A heavily indexed database can easily double or triple in size.
+
+### Summary
+A database index is a performance tool designed to **speed up read operations (`SELECT`)** at the cost of **extra storage space** and **slightly slower write operations (`INSERT/UPDATE`)**. Good database design involves strategically placing indexes on the columns you search or join most frequently.",,,
+2026-10-18T09:05:54.437001+00:00,auto,5,1,1,200,True,13482.62,18368.2,4133,"The fundamental difference between **synchronous** and **asynchronous** code lies in **how they handle time-consuming tasks** and whether they **block** the execution of other code.
+
+Here is a breakdown of the differences, real-world analogies, code examples, and when to use each.
+
+---
+
+### The Real-World Analogy (The Restaurant)
+
+* **Synchronous (A Fast-Food Counter):** You walk up to the counter, place your order, and stand there waiting for your food. The cashier cannot serve the next customer until your food is handed to you. The line halts until your task is finished.
+* **Asynchronous (A Sit-Down Restaurant):** You sit down, place your order with a waiter, and the waiter takes it to the kitchen. While your food is cooking, the waiter goes to take orders from other tables. You can talk to your friends. When the food is ready, the waiter brings it to you. Nobody is forced to stand still and wait.
+
+---
+
+### 1. Synchronous Code (Blocking)
+
+Synchronous code runs **sequentially, line by line**, from top to bottom. Each operation must finish completely before the next operation can start.
+
+* **Behavior:** If a line of code takes 5 seconds to run (e.g., downloading a file), the entire program freezes and waits for those 5 seconds before moving to the next line.
+* **Pros:** Simple to write, easy to read, and easy to debug because the flow of execution is predictable.
+* **Cons:** Can make applications slow or unresponsive (UI freezing) if a task takes a long time.
+
+#### Example (JavaScript - Synchronous)
+```javascript
+console.log(""Step 1: Start"");
+
+// Imagine this is a heavy calculation or file read that takes time
+function heavyTask() {
+    let sum = 0;
+    for (let i = 0; i < 1000000000; i++) { sum += i; }
+    return sum;
+}
+heavyTask(); // The program stops here until this is completely done
+
+console.log(""Step 2: End"");
+
+// Output:
+// Step 1: Start
+// (delays for a few seconds...)
+// Step 2: End
+```
+
+---
+
+### 2. Asynchronous Code (Non-Blocking)
+
+Asynchronous code allows long-running tasks to be **started in the background** while the rest of the program continues to run. When the background task completes, a callback, promise, or event notifies the main program to handle the result.
+
+* **Behavior:** If a task takes time (e.g., fetching data from a server), the program initiates the task and immediately moves on to the next line of code without waiting.
+* **Pros:** Highly efficient, keeps user interfaces responsive, ideal for I/O operations (network, files, databases).
+* **Cons:** Harder to write, read, and debug. Can lead to ""callback hell"" or complex state management if not structured properly.
+
+#### Example (JavaScript - Asynchronous)
+```javascript
+console.log(""Step 1: Start"");
+
+// setTimeout simulates a network request that takes 2 seconds
+setTimeout(() => {
+    console.log(""Step 2: Data fetched from server"");
+}, 2000); 
+
+console.log(""Step 3: End"");
+
+// Output:
+// Step 1: Start
+// Step 3: End
+// (2 seconds later...)
+// Step 2: Data fetched from server
+```
+
+---
+
+### Key Differences at a Glance
+
+| Feature | Synchronous Code | Asynchronous Code |
+| :--- | :--- | :--- |
+| **Execution Flow** | Line-by-line (Sequential) | Non-sequential |
+| **Blocking** | **Yes** (Blocks the thread until done) | **No** (Frees the thread while waiting) |
+| **Responsiveness** | Can freeze the UI during heavy operations | Keeps the UI smooth and responsive |
+| **Performance** | Slower for I/O tasks (waiting idle) | Fast and efficient for I/O tasks |
+| **Complexity** | Simple and straightforward | Requires Promises, Callbacks, or Async/Await |
+
+---
+
+### When to Use Which?
+
+#### Use **Synchronous** code when:
+1. The operations are simple, fast, and light on CPU usage.
+2. Step B **strictly depends** on the output of Step A, and no other task can happen in the meantime.
+3. Writing simple automation scripts or CLI tools.
+
+#### Use **Asynchronous** code when:
+1. Making **API/Network requests** (fetching data from the web).
+2. Performing **Database operations** (reading/writing data).
+3. Reading or writing large **files** on a disk.
+4. Handling **user events** (clicks, keypresses, timers).",,,
+2026-10-18T09:06:11.711817+00:00,auto,5,2,1,200,True,12419.06,17273.03,3664,"At its core, the difference between **synchronous** and **asynchronous** code comes down to **waiting**. 
+
+Here is the simple breakdown:
+
+* **Synchronous (Sync):** Tasks are executed **one after another**. The code waits for a task to finish before moving on to the next line. (Blocking)
+* **Asynchronous (Async):** Tasks can be initiated **without waiting** for them to finish. The code continues running while the background task completes. (Non-blocking)
+
+---
+
+### The Real-World Analogy: Ordering Coffee
+
+Imagine you are at a coffee shop:
+
+* **Synchronous approach:** You order a coffee. You stand at the register doing nothing while the barista makes it. The cashier **cannot** serve the next customer until your coffee is in your hands. Everyone behind you is stuck waiting.
+* **Asynchronous approach:** You order a coffee. The cashier gives you a order number (a receipt/buzzer) and immediately takes the next person's order. You step to the side and check your phone. When your coffee is ready, your number is called, and you go pick it up. 
+
+---
+
+### 1. Synchronous Code Explained
+
+In synchronous programming, the execution engine executes code line by line, from top to bottom. If a line of code takes a long time to run (like reading a massive file or requesting data from the internet), the entire program **pauses (blocks)** until that operation is complete.
+
+#### Example (Pseudocode):
+```javascript
+console.log(""1. Order coffee"");
+
+// Imagine this function takes 5 seconds to get data from a server
+let coffee = makeCoffeeSync(); 
+
+console.log(""2. Drink coffee"");
+console.log(""3. Leave shop"");
+```
+
+**Output:**
+1. Order coffee
+*(Program freezes for 5 seconds)*
+2. Drink coffee
+3. Leave shop
+
+---
+
+### 2. Asynchronous Code Explained
+
+In asynchronous programming, long-running operations are pushed to the background. The main thread continues executing the rest of the code. When the background task is finished, a notification (like a Callback, Promise, or `async/await`) informs the program so it can process the result.
+
+#### Example (JavaScript):
+```javascript
+console.log(""1. Order coffee"");
+
+// This runs in the background and takes 5 seconds
+makeCoffeeAsync().then(coffee => {
+    console.log(""2. Drink coffee"");
+});
+
+console.log(""3. Talk to friend"");
+```
+
+**Output:**
+1. Order coffee
+3. Talk to friend
+*(5 seconds pass in the background)*
+2. Drink coffee
+
+Notice how the program **did not wait** for the coffee to be made before talking to a friend!
+
+---
+
+### Key Differences at a Glance
+
+| Feature | Synchronous | Asynchronous |
+| :--- | :--- | :--- |
+| **Execution** | Sequential (step-by-step) | Concurrent (tasks overlap) |
+| **Behavior** | **Blocking**: Stops execution until task is done | **Non-Blocking**: Keeps running while waiting |
+| **Performance** | Can be slower/unresponsive during long operations | Highly efficient, keeps applications fast |
+| **User Experience** | UI can ""freeze"" while waiting | UI remains responsive |
+| **Complexity** | Easier to write and reason about | Can be harder to read and debug |
+
+---
+
+### When to use which?
+
+#### Use **Synchronous** code for:
+* Simple calculations or logic (e.g., `2 + 2`).
+* Operations that rely heavily on the immediate previous step and execute in microseconds.
+* Simple scripts where execution speed is not a concern.
+
+#### Use **Asynchronous** code for:
+* **Network requests:** Fetching data from an API or database.
+* **File I/O:** Reading or writing large files to a hard drive.
+* **Timers:** Waiting a set amount of time before running code (`setTimeout`).
+* **UI programming:** Keeping a mobile app or website smooth so buttons can still be clicked while data loads.",,,
+2026-10-18T09:06:20.219456+00:00,auto,5,3,1,200,False,,8504.52,0,,Gemini request failed,,
